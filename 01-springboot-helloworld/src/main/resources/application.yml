@@ -1,0 +1,5 @@
+server:
+       prot: 8888
+hello:
+       msg: hello World
+       msg2: heihei
