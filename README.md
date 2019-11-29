@@ -1,5 +1,3 @@
-# springcloud
-springcloud案例
 01-springboot-helloworld
   1.动态改变配置文件
     a.在resources中增加不同的配置文件格式如: application-{dev,prod,test}
