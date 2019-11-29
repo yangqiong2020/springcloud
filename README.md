@@ -89,7 +89,13 @@
 10-springcloud-hystrix-ribbon-consumer
 10-springcloud-hystrix-ribbon-provider
     1.使用降级方式来实验雪崩的托底数据
-
+      a.可以通过访问service服务中接口上的注解标注的url来访问实现类provider
+      b.可以直接访问provider注解上的url来调用实现类的方法
+      两中方式都是使用ribbon来调用，一个经过service一个不经过，
+      不过使用了service就可以通过consumer来继承service来通过本地的方式调用provider
+      而不需要通过provider来多次一举，直接再provider上加注解用原始的ribbon来访问即可
+      
+      
 10-springcloud-hystrix-ribbon-cache-consumer
     1.利用redis把查询数据缓存起来，下次如果key相同直接返回数据，减少服务器压力
     2.删除数据时候，也要把对应的缓存清空
