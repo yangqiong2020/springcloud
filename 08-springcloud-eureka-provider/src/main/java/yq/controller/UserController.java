@@ -14,9 +14,9 @@ public class UserController {
 	@RequestMapping("/user")
 	public List<User> getUsers(){
 		List<User> list = new ArrayList<>();
-		list.add(new User(1,"zhangsan",20));
-		list.add(new User(2,"lisi",22));
-		list.add(new User(3,"wangwu",20));
+		list.add(new User(1,"111",211));
+		list.add(new User(2,"111",2211));
+		list.add(new User(3,"111",20222));
 		return list;
 	}
 }

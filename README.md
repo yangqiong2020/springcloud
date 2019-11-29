@@ -54,7 +54,7 @@
 08-springcloud-eureka-provider
 08-springcloud-eureka-server-ha
     1.集群版本的eureka服务
-    2.增加了优雅关闭客户端
+    2.增加了优雅关闭客户端（解决和3同样的问题）
     3.增加了关闭服务端的自我保护功能
     4.增加了访问服务端需要密码验证功能
     5.在consumer端修改rabbin的负载均衡策略
@@ -62,3 +62,11 @@
     
 08-spring-eureka-consumer-direct
     1.消费者不向注册中心注册，通过直连provider服务获得服务，一般用做测试
+    
+09-springcloud-feign-consumer
+09-springcloud-feign-provider
+09-springcloud-feign-service
+    1.使用feign的方式获取服务，用户感觉像是调用本地服务
+    2.consumer继承service的接口，并注解上provider的服务名字
+    3.provider实现service的接口
+    4.service中使用HttpURLConnection客户端post和get方式接受参数不同post可以接受对象
