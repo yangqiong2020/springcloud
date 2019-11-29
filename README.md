@@ -59,3 +59,6 @@
     4.增加了访问服务端需要密码验证功能
     5.在consumer端修改rabbin的负载均衡策略
     6.把provider部署两套服务做负载，才能看到rabbin的负债均衡效果
+    
+08-spring-eureka-consumer-direct
+    1.消费者不向注册中心注册，通过直连provider服务获得服务，一般用做测试
