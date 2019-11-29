@@ -40,4 +40,9 @@ public class ProviderService implements ProductService {
 	public Product addProduct2(@RequestBody Product product) {
 		return product;
 	}
+
+	@Override
+	public Product addProduct3(@RequestBody Product product) {
+		return product;
+	}
 }

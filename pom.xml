@@ -32,6 +32,7 @@
         <module>09-springcloud-feign-provider</module>
         <module>09-springcloud-feign-consumer</module>
         <module>09-springcloud-feign-consumer-gzip</module>
+        <module>09-springcloud-feign-consumer-httpclient</module>
     </modules>
 
     <parent>

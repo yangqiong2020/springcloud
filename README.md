@@ -74,3 +74,8 @@
 09-springcloud-feign-consumer-gzip
     1.增加了feign端的启动gzip功能
     2.增加了浏览器端响应的数据启动gzip功能
+    
+09-springcloud-feign-consumer-httpclient
+    1.：如果使用 HttpClient 作为 Feign 的客户端工具。
+    那么在定义接口上的注解是需要 注意，如果传递的是一个自定义的对象（对象会使用 json 格式来专递）。需要制定类型
+    2.httpClient客户端使用post和get都可以传递对象，不给过在provider接受的时候需要在参数前面都加上注解@RequestBody 
