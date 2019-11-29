@@ -76,10 +76,12 @@
     2.增加了浏览器端响应的数据启动gzip功能
     
 09-springcloud-feign-consumer-httpclient
-    1.：如果使用 HttpClient 作为 Feign 的客户端工具。
+    1.如果使用 HttpClient 作为 Feign 的客户端工具。
     那么在定义接口上的注解是需要 注意，如果传递的是一个自定义的对象（对象会使用 json 格式来专递）。需要制定类型
     2.httpClient客户端使用post和get都可以传递对象，不给过在provider接受的时候需要在参数前面都加上注解@RequestBody
     
 09-springcloud-feign-consumer-log
     1.通过配置，可以在日志中查看到feign请求服务和相应服务需要的时间信息
     2.浏览器可以查看用户请求consumer到consumer响应的总共耗时 
+    3.配置feign的请求超时时间就是配置ribbon的超时时间，配合测试需要把provide的findALl方法等待6秒
+    如果在等待时间内返回响应则不会报错，如果在等待时间外返回响应则报错
