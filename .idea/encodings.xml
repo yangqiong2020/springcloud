@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/01-springboot-helloworld" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02-springboot-admin-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02-springboot-admin-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-springcloud-mq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04-rabbitmq-direct-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04-rabbitmq-direct-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-rabbitmq-topic-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-rabbitmq-topic-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06-rabbitmq-fanout-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06-rabbitmq-fanout-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06-rabbitmq-fanout-soh-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06-rabbitmq-fanout-soh-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-rabbitmq-durable-direct-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-rabbitmq-durable-direct-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08-spring-eureka-consumer-direct" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08-springcloud-eureka-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08-springcloud-eureka-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08-springcloud-eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08-springcloud-eureka-server-ha" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/09-springcloud-feign-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/09-springcloud-feign-consumer-gzip" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/09-springcloud-feign-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/09-springcloud-feign-service" charset="UTF-8" />
+  </component>
+</project>

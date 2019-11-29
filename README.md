@@ -69,4 +69,8 @@
     1.使用feign的方式获取服务，用户感觉像是调用本地服务
     2.consumer继承service的接口，并注解上provider的服务名字
     3.provider实现service的接口
-    4.service中使用HttpURLConnection客户端post和get方式接受参数不同post可以接受对象
+    4.service中使用HttpURLConnection客户端post和get方式接受参数的不同，post可以接受对象
+    
+09-springcloud-feign-consumer-gzip
+    1.增加了feign端的启动gzip功能
+    2.增加了浏览器端响应的数据启动gzip功能

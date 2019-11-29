@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="01-springboot-helloworld" />
+        <module name="02-springboot-admin-client" />
+        <module name="02-springboot-admin-server" />
+        <module name="03-springcloud-mq" />
+        <module name="04-rabbitmq-direct-consumer" />
+        <module name="04-rabbitmq-direct-provider" />
+        <module name="05-rabbitmq-topic-consumer" />
+        <module name="05-rabbitmq-topic-provider" />
+        <module name="06-rabbitmq-fanout-consumer" />
+        <module name="06-rabbitmq-fanout-provider" />
+        <module name="06-rabbitmq-fanout-soh-consumer" />
+        <module name="06-rabbitmq-fanout-soh-provider" />
+        <module name="07-rabbitmq-durable-direct-consumer" />
+        <module name="07-rabbitmq-durable-direct-provider" />
+        <module name="08-spring-eureka-consumer-direct" />
+        <module name="08-springcloud-eureka-consumer" />
+        <module name="08-springcloud-eureka-provider" />
+        <module name="08-springcloud-eureka-server" />
+        <module name="08-springcloud-eureka-server-ha" />
+        <module name="09-springcloud-feign-consumer" />
+        <module name="09-springcloud-feign-consumer-gzip" />
+        <module name="09-springcloud-feign-provider" />
+        <module name="09-springcloud-feign-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
