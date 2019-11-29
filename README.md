@@ -88,9 +88,13 @@
  
 10-springcloud-hystrix-ribbon-consumer
 10-springcloud-hystrix-ribbon-provider
-    1.使用ribbon方式来实验雪崩的托底数据
+    1.使用降级方式来实验雪崩的托底数据
 
 10-springcloud-hystrix-ribbon-cache-consumer
     1.利用redis把查询数据缓存起来，下次如果key相同直接返回数据，减少服务器压力
     2.删除数据时候，也要把对应的缓存清空
     3.此案例get和del方法不需要用到provider端
+    
+11-springcloud-hystrix-ribbon-batch-consumer
+    1.使用请求合并方式来减少服务器压力，把配置时间段内的请求 一次性发送给provider进行处理
+    2.此案例不需要用到provider端服务

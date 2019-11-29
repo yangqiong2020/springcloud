@@ -32,5 +32,6 @@
     <file url="file://$PROJECT_DIR$/10-springcloud-hystrix-ribbon-cache-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/10-springcloud-hystrix-ribbon-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/10-springcloud-hystrix-ribbon-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/11-springcloud-hystrix-ribbon-batch-consumer" charset="UTF-8" />
   </component>
 </project>

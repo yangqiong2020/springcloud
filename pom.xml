@@ -37,6 +37,7 @@
         <module>10-springcloud-hystrix-ribbon-consumer</module>
         <module>10-springcloud-hystrix-ribbon-provider</module>
         <module>10-springcloud-hystrix-ribbon-cache-consumer</module>
+        <module>11-springcloud-hystrix-ribbon-batch-consumer</module>
     </modules>
 
     <parent>
