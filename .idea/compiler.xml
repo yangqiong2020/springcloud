@@ -31,6 +31,7 @@
         <module name="09-springcloud-feign-consumer-log" />
         <module name="09-springcloud-feign-provider" />
         <module name="09-springcloud-feign-service" />
+        <module name="10-springcloud-hystrix-ribbon-cache-consumer" />
         <module name="10-springcloud-hystrix-ribbon-consumer" />
         <module name="10-springcloud-hystrix-ribbon-provider" />
       </profile>
