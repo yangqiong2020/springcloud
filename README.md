@@ -85,3 +85,7 @@
     2.浏览器可以查看用户请求consumer到consumer响应的总共耗时 
     3.配置feign的请求超时时间就是配置ribbon的超时时间，配合测试需要把provide的findALl方法等待6秒
     如果在等待时间内返回响应则不会报错，如果在等待时间外返回响应则报错
+ 
+10-springcloud-hystrix-ribbon-consumer
+10-springcloud-hystrix-ribbon-provider
+    1.使用ribbon方式来实验雪崩的托底数据

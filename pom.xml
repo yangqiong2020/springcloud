@@ -34,6 +34,8 @@
         <module>09-springcloud-feign-consumer-gzip</module>
         <module>09-springcloud-feign-consumer-httpclient</module>
         <module>09-springcloud-feign-consumer-log</module>
+        <module>10-springcloud-hystrix-ribbon-consumer</module>
+        <module>10-springcloud-hystrix-ribbon-provider</module>
     </modules>
 
     <parent>

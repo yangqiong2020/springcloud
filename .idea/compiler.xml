@@ -31,7 +31,12 @@
         <module name="09-springcloud-feign-consumer-log" />
         <module name="09-springcloud-feign-provider" />
         <module name="09-springcloud-feign-service" />
+        <module name="10-springcloud-hystrix-ribbon-consumer" />
+        <module name="10-springcloud-hystrix-ribbon-provider" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="10-springcloud-hystrix-provider" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
