@@ -33,6 +33,7 @@
         <module>09-springcloud-feign-consumer</module>
         <module>09-springcloud-feign-consumer-gzip</module>
         <module>09-springcloud-feign-consumer-httpclient</module>
+        <module>09-springcloud-feign-consumer-log</module>
     </modules>
 
     <parent>

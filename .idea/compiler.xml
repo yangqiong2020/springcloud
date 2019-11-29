@@ -28,6 +28,7 @@
         <module name="09-springcloud-feign-consumer" />
         <module name="09-springcloud-feign-consumer-gzip" />
         <module name="09-springcloud-feign-consumer-httpclient" />
+        <module name="09-springcloud-feign-consumer-log" />
         <module name="09-springcloud-feign-provider" />
         <module name="09-springcloud-feign-service" />
       </profile>

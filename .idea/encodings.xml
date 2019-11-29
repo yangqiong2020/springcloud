@@ -24,6 +24,7 @@
     <file url="file://$PROJECT_DIR$/09-springcloud-feign-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/09-springcloud-feign-consumer-gzip" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/09-springcloud-feign-consumer-httpclient" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/09-springcloud-feign-consumer-log" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/09-springcloud-feign-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/09-springcloud-feign-service" charset="UTF-8" />
   </component>
