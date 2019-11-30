@@ -135,3 +135,11 @@
 09-springcloud-feign-provider 
 15-springcloud-hystrix-feign-fallback-consumer-factory
     1.使用feign请求的方式，进行降级处理，返回兜底数据，并捕获异常信息
+    
+16-springcloud-dashboard-hystrix-ribbon-consumer
+16-springcloud-dashboard-view-hystrix-ribbon-consumer
+    1.使用dashboard-view来监控hystrix请求
+    监控的数据：提供服务的服务监控日志：http://localhost:1001/hystrix.stream
+    监控的页面：http://localhost:1002/hystrix
+    把要监控的数据，添加到http://localhost:1002/hystrix这个页面的指定输入框中，
+    多少时间刷新一次，监控的标题

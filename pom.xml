@@ -43,6 +43,8 @@
         <module>14-springcloud-hystrix-ribbon-semaphore-consumer</module>
         <module>15-springcloud-hystrix-feign-fallback-consumer</module>
         <module>15-springcloud-hystrix-feign-fallback-consumer-factory</module>
+        <module>16-springcloud-dashboard-view-hystrix-ribbon-consumer</module>
+        <module>16-springcloud-dashboard-hystrix-ribbon-consumer</module>
     </modules>
 
     <parent>

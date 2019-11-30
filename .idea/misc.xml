@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/13-springcloud-hystrix-ribbon-threadpool-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/14-springcloud-hystrix-ribbon-semaphore-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/16-springcloud-dashboard-view-hystrix-ribbon-consumer/pom.xml" />
       </list>
     </option>
   </component>
