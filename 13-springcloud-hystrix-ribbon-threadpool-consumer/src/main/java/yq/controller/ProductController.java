@@ -16,6 +16,7 @@ public class ProductController {
 	
 	@RequestMapping("/consumer")
 	public List<Product> getUsers(){
+		System.out.println(Thread.currentThread().getName());
 		return this.userService.getUsers();
 	}
 	

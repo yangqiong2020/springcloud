@@ -34,5 +34,6 @@
     <file url="file://$PROJECT_DIR$/12-springcloud-hystrix-ribbon-breaker-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/13-springcloud-hystrix-ribbon-threadpool" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/13-springcloud-hystrix-ribbon-threadpool-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/14-springcloud-hystrix-ribbon-semaphore-consumer" charset="UTF-8" />
   </component>
 </project>

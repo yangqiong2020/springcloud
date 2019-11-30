@@ -23,7 +23,7 @@ public class ProviderService implements ProductService {
 //		} catch (InterruptedException e) {
 //			e.printStackTrace();
 //		}
-		System.out.println("来了老弟");
+		System.out.println("来了老弟"+Thread.currentThread().getName());
 		List<Product> list = new ArrayList<>();
 		 list.add(new Product(1, "电视"));
 		 list.add(new Product(2, "电脑"));
