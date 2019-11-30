@@ -38,6 +38,8 @@
         <module name="12-springcloud-hystrix-ribbon-breaker-consumer" />
         <module name="13-springcloud-hystrix-ribbon-threadpool-consumer" />
         <module name="14-springcloud-hystrix-ribbon-semaphore-consumer" />
+        <module name="15-springcloud-hystrix-feign-fallback-consumer" />
+        <module name="15-springcloud-hystrix-feign-fallback-consumer-factory" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -41,6 +41,8 @@
         <module>12-springcloud-hystrix-ribbon-breaker-consumer</module>
         <module>13-springcloud-hystrix-ribbon-threadpool-consumer</module>
         <module>14-springcloud-hystrix-ribbon-semaphore-consumer</module>
+        <module>15-springcloud-hystrix-feign-fallback-consumer</module>
+        <module>15-springcloud-hystrix-feign-fallback-consumer-factory</module>
     </modules>
 
     <parent>

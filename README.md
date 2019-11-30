@@ -125,3 +125,13 @@
     1.调用provider的线程和请求是同一个线程，信号量隔离
     2.调用provider的线程和请求不是同一个线程，线程池隔离 
         说明：controller中的方法请求线程，service的方法调用provider线程
+  
+09-springcloud-feign-service      
+09-springcloud-feign-provider  
+15-springcloud-hystrix-feign-fallback-consumer
+    1.使用feign请求的方式，进行降级处理，返回兜底数据
+ 
+09-springcloud-feign-service      
+09-springcloud-feign-provider 
+15-springcloud-hystrix-feign-fallback-consumer-factory
+    1.使用feign请求的方式，进行降级处理，返回兜底数据，并捕获异常信息
