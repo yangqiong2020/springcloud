@@ -35,6 +35,7 @@
         <module name="10-springcloud-hystrix-ribbon-consumer" />
         <module name="10-springcloud-hystrix-ribbon-provider" />
         <module name="11-springcloud-hystrix-ribbon-batch-consumer" />
+        <module name="12-springcloud-hystrix-ribbon-breaker-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

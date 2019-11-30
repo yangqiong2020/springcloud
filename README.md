@@ -95,12 +95,21 @@
       不过使用了service就可以通过consumer来继承service来通过本地的方式调用provider
       而不需要通过provider来多次一举，直接再provider上加注解用原始的ribbon来访问即可
       
-      
+10-springcloud-hystrix-ribbon-provider      
 10-springcloud-hystrix-ribbon-cache-consumer
     1.利用redis把查询数据缓存起来，下次如果key相同直接返回数据，减少服务器压力
     2.删除数据时候，也要把对应的缓存清空
     3.此案例get和del方法不需要用到provider端
     
+10-springcloud-hystrix-ribbon-provider    
 11-springcloud-hystrix-ribbon-batch-consumer
     1.使用请求合并方式来减少服务器压力，把配置时间段内的请求 一次性发送给provider进行处理
     2.此案例不需要用到provider端服务
+    
+09-springcloud-feign-provider
+12-springcloud-hystrix-ribbon-breaker-consumer
+    1.需要这两个服务来演示熔断机制
+    多少秒内大于多少个请求
+    多少秒内错误率大于多少
+    熔断之后多少秒内进行重试
+    2.这里访问provider是方式service的url

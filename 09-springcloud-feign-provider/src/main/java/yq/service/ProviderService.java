@@ -18,11 +18,12 @@ public class ProviderService implements ProductService {
 
 	@Override
 	public List<Product> findAll() {
-		try { //测试请求超时
-			Thread.sleep(6000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+//		try { //测试请求超时
+//			Thread.sleep(6000);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
+		System.out.println("来了老弟");
 		List<Product> list = new ArrayList<>();
 		 list.add(new Product(1, "电视"));
 		 list.add(new Product(2, "电脑"));
