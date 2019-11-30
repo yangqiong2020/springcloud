@@ -40,5 +40,8 @@
     <file url="file://$PROJECT_DIR$/16-springcloud-dashboard-hystrix-ribbon-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/16-springcloud-dashboard-view-hystrix-rabbin-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/16-springcloud-dashboard-view-hystrix-ribbon-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/17-springcloud-turbine-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/17-springcloud-turbine-consumer-s1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/17-springcloud-turbine-consumer-s2" charset="UTF-8" />
   </component>
 </project>

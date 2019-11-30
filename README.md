@@ -143,3 +143,15 @@
     监控的页面：http://localhost:1002/hystrix
     把要监控的数据，添加到http://localhost:1002/hystrix这个页面的指定输入框中，
     多少时间刷新一次，监控的标题
+    
+17-springcloud-turbine-consumer
+17-springcloud-turbine-consumer-s1
+17-springcloud-turbine-consumer=s2
+16-springcloud-dashboard-view-hystrix-ribbon-consumer
+    1.利用turbine做集群监控日志，然后把页面流传给dashboard
+    集群服务地址：http://localhost:9010/hystrix.stream
+                   http://localhost:9011/hystrix.stream
+    turbine服务地址：http://localhost:1002/turbine.stream
+    dashboard服务地址：http://localhost:1002/hystrix
+    turbine监控集群服务聚合日志，然后把日志地址传入dashboard
+    2.必须要有服务，不然没有数据

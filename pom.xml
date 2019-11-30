@@ -45,6 +45,9 @@
         <module>15-springcloud-hystrix-feign-fallback-consumer-factory</module>
         <module>16-springcloud-dashboard-view-hystrix-ribbon-consumer</module>
         <module>16-springcloud-dashboard-hystrix-ribbon-consumer</module>
+        <module>17-springcloud-turbine-consumer</module>
+        <module>17-springcloud-turbine-consumer-s1</module>
+        <module>17-springcloud-turbine-consumer-s2</module>
     </modules>
 
     <parent>
