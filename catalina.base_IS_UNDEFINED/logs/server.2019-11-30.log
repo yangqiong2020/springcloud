@@ -415,3 +415,162 @@
 2019-11-30 11:19:17.370 [PollingServerListUpdater-0] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: feign-provider.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
 2019-11-30 11:24:11.498 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
 2019-11-30 11:29:11.500 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-11-30 11:34:11.503 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-11-30 11:39:11.505 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-11-30 11:47:05.070 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@67c27493: startup date [Sat Nov 30 11:47:05 CST 2019]; root of context hierarchy
+2019-11-30 11:47:05.291 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-11-30 11:47:05.303 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-11-30 11:47:05.319 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$55e352dc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-30 11:47:06.882 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2019-11-30 11:47:07.945 [main] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/hystrix-ribbon-breaker-consumer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-11-30 11:47:07.947 [main] INFO  yq.ConsumerApplication - No active profile set, falling back to default profiles: default
+2019-11-30 11:47:07.957 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e276594: startup date [Sat Nov 30 11:47:07 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@67c27493
+2019-11-30 11:47:08.362 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=6a51e415-a928-31ec-99ed-915d557e05b3
+2019-11-30 11:47:08.376 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-11-30 11:47:08.469 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$55e352dc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-30 11:47:08.979 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9010 (http)
+2019-11-30 11:47:08.995 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9010"]
+2019-11-30 11:47:09.005 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-30 11:47:09.005 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-11-30 11:47:09.118 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-30 11:47:09.119 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1162 ms
+2019-11-30 11:47:09.272 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-30 11:47:09.277 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-30 11:47:09.277 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-30 11:47:09.278 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-30 11:47:09.278 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-30 11:47:10.755 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-11-30 11:47:10.903 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-11-30 11:47:10.904 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-11-30 11:47:10.911 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-11-30 11:47:10.912 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-11-30 11:47:11.132 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e276594: startup date [Sat Nov 30 11:47:07 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@67c27493
+2019-11-30 11:47:11.200 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/consumer]}" onto public java.util.List<yq.pojo.Product> yq.controller.ProductController.getUsers(java.lang.Integer)
+2019-11-30 11:47:11.204 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-30 11:47:11.205 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-30 11:47:11.240 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-30 11:47:11.241 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-30 11:47:11.285 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-30 11:47:11.580 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-11-30 11:47:11.589 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-11-30 11:47:11.591 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-11-30 11:47:11.591 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-11-30 11:47:11.594 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-11-30 11:47:11.604 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-11-30 11:47:11.614 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7e276594,type=ConfigurationPropertiesRebinder]
+2019-11-30 11:47:11.715 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-11-30 11:47:11.724 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-11-30 11:47:11.768 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-11-30 11:47:12.129 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-11-30 11:47:12.129 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-11-30 11:47:12.213 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-11-30 11:47:12.213 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-11-30 11:47:12.357 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-11-30 11:47:12.522 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-11-30 11:47:12.522 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-11-30 11:47:12.522 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-11-30 11:47:12.523 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-11-30 11:47:12.523 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-11-30 11:47:12.523 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-11-30 11:47:12.523 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-11-30 11:47:12.658 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-11-30 11:47:12.659 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-11-30 11:47:12.660 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-11-30 11:47:12.663 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1575085632663 with initial instances count: 3
+2019-11-30 11:47:12.688 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application hystrix-ribbon-breaker-consumer with eureka with status UP
+2019-11-30 11:47:12.689 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1575085632689, current=UP, previous=STARTING]
+2019-11-30 11:47:12.691 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_HYSTRIX-RIBBON-BREAKER-CONSUMER/localhost:hystrix-ribbon-breaker-consumer:9010: registering service...
+2019-11-30 11:47:12.705 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9010"]
+2019-11-30 11:47:12.719 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-11-30 11:47:12.735 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9010 (http)
+2019-11-30 11:47:12.735 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_HYSTRIX-RIBBON-BREAKER-CONSUMER/localhost:hystrix-ribbon-breaker-consumer:9010 - registration status: 204
+2019-11-30 11:47:12.736 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9010
+2019-11-30 11:47:12.740 [main] INFO  yq.ConsumerApplication - Started ConsumerApplication in 9.402 seconds (JVM running for 9.875)
+2019-11-30 11:47:18.202 [http-nio-9010-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-30 11:47:18.202 [http-nio-9010-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-30 11:47:18.220 [http-nio-9010-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2019-11-30 11:48:08.330 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@67c27493: startup date [Sat Nov 30 11:48:08 CST 2019]; root of context hierarchy
+2019-11-30 11:48:08.542 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-11-30 11:48:08.563 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-11-30 11:48:08.568 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$55e352dc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-30 11:48:10.091 [main] INFO  o.s.c.c.client.ConfigServicePropertySourceLocator - Fetching config from server at: http://localhost:8888
+2019-11-30 11:48:11.148 [main] WARN  o.s.c.c.client.ConfigServicePropertySourceLocator - Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/hystrix-ribbon-threadpool-consumer/default": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2019-11-30 11:48:11.150 [main] INFO  yq.ConsumerApplication - No active profile set, falling back to default profiles: default
+2019-11-30 11:48:11.160 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e276594: startup date [Sat Nov 30 11:48:11 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@67c27493
+2019-11-30 11:48:11.574 [main] INFO  o.springframework.cloud.context.scope.GenericScope - BeanFactory id=6a51e415-a928-31ec-99ed-915d557e05b3
+2019-11-30 11:48:11.591 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-11-30 11:48:11.682 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$55e352dc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-30 11:48:12.186 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 9010 (http)
+2019-11-30 11:48:12.201 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9010"]
+2019-11-30 11:48:12.210 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-30 11:48:12.210 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.31
+2019-11-30 11:48:12.328 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-30 11:48:12.329 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1169 ms
+2019-11-30 11:48:12.450 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-30 11:48:12.454 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-30 11:48:12.455 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-30 11:48:12.456 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-30 11:48:12.456 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-30 11:48:13.912 [main] INFO  org.springframework.cloud.commons.util.InetUtils - Cannot determine local hostname
+2019-11-30 11:48:14.063 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-11-30 11:48:14.064 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-11-30 11:48:14.069 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-11-30 11:48:14.070 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-11-30 11:48:14.296 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e276594: startup date [Sat Nov 30 11:48:11 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@67c27493
+2019-11-30 11:48:14.376 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/consumer]}" onto public java.util.List<yq.pojo.Product> yq.controller.ProductController.getUsers()
+2019-11-30 11:48:14.377 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/consumer1]}" onto public void yq.controller.ProductController.getUsers1()
+2019-11-30 11:48:14.380 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-30 11:48:14.381 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-30 11:48:14.418 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-30 11:48:14.418 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-30 11:48:14.458 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-30 11:48:14.741 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-11-30 11:48:14.748 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-11-30 11:48:14.749 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-11-30 11:48:14.749 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-11-30 11:48:14.751 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-11-30 11:48:14.762 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-11-30 11:48:14.774 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7e276594,type=ConfigurationPropertiesRebinder]
+2019-11-30 11:48:14.875 [main] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-11-30 11:48:14.882 [main] INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-11-30 11:48:14.930 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-11-30 11:48:15.321 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-11-30 11:48:15.322 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-11-30 11:48:15.405 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-11-30 11:48:15.405 [main] INFO  c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-11-30 11:48:15.550 [main] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2019-11-30 11:48:15.699 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2019-11-30 11:48:15.700 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2019-11-30 11:48:15.700 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2019-11-30 11:48:15.700 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2019-11-30 11:48:15.700 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2019-11-30 11:48:15.700 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2019-11-30 11:48:15.701 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2019-11-30 11:48:15.827 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2019-11-30 11:48:15.828 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2019-11-30 11:48:15.830 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2019-11-30 11:48:15.833 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1575085695832 with initial instances count: 4
+2019-11-30 11:48:15.856 [main] INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application hystrix-ribbon-threadpool-consumer with eureka with status UP
+2019-11-30 11:48:15.857 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1575085695857, current=UP, previous=STARTING]
+2019-11-30 11:48:15.858 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_HYSTRIX-RIBBON-THREADPOOL-CONSUMER/localhost:hystrix-ribbon-threadpool-consumer:9010: registering service...
+2019-11-30 11:48:15.870 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9010"]
+2019-11-30 11:48:15.882 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-11-30 11:48:15.889 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_HYSTRIX-RIBBON-THREADPOOL-CONSUMER/localhost:hystrix-ribbon-threadpool-consumer:9010 - registration status: 204
+2019-11-30 11:48:15.897 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 9010 (http)
+2019-11-30 11:48:15.898 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9010
+2019-11-30 11:48:15.901 [main] INFO  yq.ConsumerApplication - Started ConsumerApplication in 9.269 seconds (JVM running for 10.381)
+2019-11-30 11:48:28.018 [http-nio-9010-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-11-30 11:48:28.018 [http-nio-9010-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-11-30 11:48:28.039 [http-nio-9010-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2019-11-30 11:48:28.260 [hystrix-feign-provider-1] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@153caf96: startup date [Sat Nov 30 11:48:28 CST 2019]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e276594
+2019-11-30 11:48:28.302 [hystrix-feign-provider-1] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-11-30 11:48:28.450 [hystrix-feign-provider-1] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: feign-provider.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-11-30 11:48:28.468 [hystrix-feign-provider-1] INFO  com.netflix.util.concurrent.ShutdownEnabledTimer - Shutdown hook installed for: NFLoadBalancer-PingTimer-feign-provider
+2019-11-30 11:48:28.488 [hystrix-feign-provider-1] INFO  com.netflix.loadbalancer.BaseLoadBalancer - Client: feign-provider instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=feign-provider,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2019-11-30 11:48:28.493 [hystrix-feign-provider-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - Using serverListUpdater PollingServerListUpdater
+2019-11-30 11:48:28.512 [hystrix-feign-provider-1] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: feign-provider.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-11-30 11:48:28.514 [hystrix-feign-provider-1] INFO  c.n.loadbalancer.DynamicServerListLoadBalancer - DynamicServerListLoadBalancer for client feign-provider initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=feign-provider,current list of Servers=[localhost:9003],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:localhost:9003;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@4089e259
+2019-11-30 11:48:29.497 [PollingServerListUpdater-0] INFO  com.netflix.config.ChainedDynamicProperty - Flipping property: feign-provider.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2019-11-30 11:53:15.703 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

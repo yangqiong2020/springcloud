@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/13-springcloud-hystrix-ribbon-threadpool-consumer/pom.xml" />
       </list>
     </option>
   </component>

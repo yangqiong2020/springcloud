@@ -113,3 +113,8 @@
     多少秒内错误率大于多少
     熔断之后多少秒内进行重试
     2.这里访问provider是方式service的url
+    
+09-springcloud-feign-provider
+13-springcloud-hystrix-ribbon-threadpool-consumer
+    1.使用线程池隔离之后，调用provider的方法和fallback方法不是一个线程
+    2.在没有使用线程池隔离时，调用provider的方法和fallback方法是同一个线程
