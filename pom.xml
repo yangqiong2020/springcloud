@@ -61,6 +61,13 @@
         <module>20-e-book-order-service</module>
         <module>21-zuul-dateway</module>
         <module>21-zuul-gateway-route</module>
+        <module>21-zuul-gateway-filter</module>
+        <module>21-zuul-gateway-example</module>
+        <module>22-springcloud-eureka-consumer-dashboard-view</module>
+        <module>22-zuul-gateway</module>
+        <module>22-zuul-gateway-fallback</module>
+        <module>22-zuul-gateway-ratelimt</module>
+        <module>22-zuul-gateway-timeout</module>
     </modules>
 
     <parent>

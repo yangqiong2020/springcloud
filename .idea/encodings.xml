@@ -54,6 +54,13 @@
     <file url="file://$PROJECT_DIR$/20-e-book-user-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/20-zuul-dateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/21-zuul-dateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/21-zuul-gateway-example" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/21-zuul-gateway-filter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/21-zuul-gateway-route" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/22-springcloud-eureka-consumer-dashboard-view" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/22-zuul-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/22-zuul-gateway-fallback" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/22-zuul-gateway-ratelimt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/22-zuul-gateway-timeout" charset="UTF-8" />
   </component>
 </project>

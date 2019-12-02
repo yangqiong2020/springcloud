@@ -57,7 +57,14 @@
         <module name="20-e-book-user-provider" />
         <module name="20-e-book-user-service" />
         <module name="21-zuul-dateway" />
+        <module name="21-zuul-gateway-example" />
+        <module name="21-zuul-gateway-filter" />
         <module name="21-zuul-gateway-route" />
+        <module name="22-springcloud-eureka-consumer-dashboard-view" />
+        <module name="22-zuul-gateway" />
+        <module name="22-zuul-gateway-fallback" />
+        <module name="22-zuul-gateway-ratelimt" />
+        <module name="22-zuul-gateway-timeout" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

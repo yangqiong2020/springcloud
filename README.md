@@ -207,4 +207,33 @@
     4.排除多个服务
     5.路由指定，url和服务指定 
     6.路由指定，两条配置合并成一条
+    
+21-zuul-gateway-filter
+    1.自定义网关过滤器
 
+21-zuul-gateway-example
+20-e-book-user-provider
+    1.自定义网关过滤器
+    2.验证pre error post routing 和权重影响下的执行顺序
+     
+22-springcloud-eureka-consumer-dashboard-view
+22-zuul-gateway
+20-e-book-order-provider
+    1.dashboard监控zuul
+    2.访问地址：http://localhost:9020/e-book-order-provider/order/findAll
+    3.日志流:http://localhost:9020/hystrix.stream
+    4.显示页面:http://localhost:1001/hystrix
+    
+22-zuul-gateway-fallback
+20-e-book-order-provider
+    1.zuul给服务降级处理
+
+22-zuul-gateway-ratelimt
+20-e-book-order-provider
+20-e-book-product-provider
+    1.测试全局限流和局部限流
+    2.在多少秒内只能访问几次
+
+22-zuul-gateway-timeout
+20-e-book-order-provider
+    1.hystrix和ribbon超时演示

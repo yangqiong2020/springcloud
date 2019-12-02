@@ -18,6 +18,11 @@ public class OrderServiceImpl {
 	 * 查询所有订单
 	 */
 	public List<Orders> findOrderAll(){
+//		try {
+//			Thread.sleep(5000);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
 		OrdersExample example = new OrdersExample();
 		return this.orderMapper.selectByExample(example);
 	}
