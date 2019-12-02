@@ -45,6 +45,19 @@
         <module name="17-springcloud-turbine-consumer" />
         <module name="17-springcloud-turbine-consumer-s1" />
         <module name="17-springcloud-turbine-consumer-s2" />
+        <module name="18-springcloud-dashboard-mq-consumer" />
+        <module name="18-springcloud-turbine-mq-consumer" />
+        <module name="20-e-book-consumer" />
+        <module name="20-e-book-order-provider" />
+        <module name="20-e-book-order-service" />
+        <module name="20-e-book-product-provider" />
+        <module name="20-e-book-product-service" />
+        <module name="20-e-book-trade-provider" />
+        <module name="20-e-book-trade-service" />
+        <module name="20-e-book-user-provider" />
+        <module name="20-e-book-user-service" />
+        <module name="21-zuul-dateway" />
+        <module name="21-zuul-gateway-route" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

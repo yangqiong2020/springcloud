@@ -155,3 +155,56 @@
     dashboard服务地址：http://localhost:1002/hystrix
     turbine监控集群服务聚合日志，然后把日志地址传入dashboard
     2.必须要有服务，不然没有数据
+    
+18-springcloud-dashboard-mq-consumer
+18-springcloud-turbine-mq-consumer
+16-springcloud-dashboard-view-hystrix-ribbon-consumer
+    1.中间加了一个rabbitmq被监控的日志，直接传递给rabbitmq；
+    然后turbine在去rabbitmq中去
+    2.不需要向上个案例，turbine要配置所有被监控的服务名字，
+    而且日志量好，使用消息队列可以消峰
+    3.试验没成功，日志没有传递到rabbitmq中去
+
+19-generator-sqlmap-custom
+    1.先在数据库中把库和表都建好，然后通过逆向工程来生成mapper.xml和pojo文件
+    2.测试之后没有生成文件，下次解决
+
+20-e-book-consumer
+20-e-book-order-provider
+20-e-book-order-service
+20-e-book-product-provider
+20-e-book-product-service
+20-e-book-trade-provider
+20-e-book-trade-service
+20-e-book-user-provider
+20-e-book-user-service
+    1.使用了代理链条设计模式
+    2.浏览器访问create方法
+    3.验证登录
+    4.先创建order订单，然后在穿件trade交易流水，然后在创建交易流水的service服务中，调用更新新order订单的服务，把交易id传入之前的order订单中，并更新
+    5.疑问，同样是个插入order和trade 为什么在order中create_date可以自动创建，而在trade中create_date不能自动创建
+    6.自动更新日期在试验使用的mysql版本中需要加入触发器，触发器要创建增加，修改，删除三种，不能使用 on update的方式
+    
+21-zuul-dateway
+20-e-book-order-provider
+20-e-book-order-service
+  1.访问方式：http://网关服务地址:网关服务端口/访问的服务的名称/访问的服务中的接口的地址
+  例如：http://localhost:9020/e-book-order-provider/order/findAll 
+  
+21-zuul-dateway-route
+20-e-book-user-provider
+20-e-book-user-service
+    1.配置：zuul.routes.e-book-user-provider.path=/suibian/**
+    访问：http://localhost:9030/suibian/user/login?userName=admin&password=admin
+    
+21-zuul-gateway-route
+20-e-book-user-provider
+20-e-book-order-provider
+20-e-book-product-provider
+    1.增加前缀来访问服务
+    2.排除所有服务，然后添加需要的服务
+    3.排除指定访问路径的服务
+    4.排除多个服务
+    5.路由指定，url和服务指定 
+    6.路由指定，两条配置合并成一条
+
