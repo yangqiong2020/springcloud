@@ -23,6 +23,7 @@ public class ConsumerController {
 	@RequestMapping(value="/find",method=RequestMethod.GET)
 	public List<Product> createOrder(){
 		List<Product> products = this.productService.findAll();
+		System.out.println("-----------------------");
 		return products;
 	}
 	

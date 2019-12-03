@@ -15,7 +15,7 @@ import com.book.product.pojo.Product;
  *
  */
 @RequestMapping("/product")
-public interface ProductService {
+public interface  ProductService {
 	
 	//查询所有商品
 	@RequestMapping(value="/findAll",method=RequestMethod.GET)
