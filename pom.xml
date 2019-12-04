@@ -94,6 +94,9 @@
         <module>23-config-server-encryption-sym</module>
         <module>23-config-server-rsa</module>
         <module>23-config-server-encryption-sym-security</module>
+        <module>24-config-client-refresh-bus</module>
+        <module>24-config-client1-refresh-bus</module>
+        <module>24-config-server-bus</module>
     </modules>
 
     <parent>

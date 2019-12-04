@@ -134,10 +134,18 @@ public class HttpClientUtil {
 	}
 	
 	public static void main(String[] args) {
-		//刷新配置
+		//刷新单个客户端的配置
 //		String url ="http://127.0.0.1:9051/refresh";
 //		String info = HttpClientUtil.doPost(url);
 //		System.out.println(info);
+
+		//刷新消息总线(配置中心客户端或服务端uri一样) 消息存入rabbitmq，并通知其他客户端刷新配置
+//		String url ="http://127.0.0.1:9050/bus/refresh";
+		//刷新指定的服务
+		String url ="http://127.0.0.1:9050/bus/refresh?destination=config-client:**";
+		String info = HttpClientUtil.doPost(url);
+		System.out.println(info);
+
 		//-----------------------对称加密
 		//加密字符
 //		String eurl = "http://127.0.0.1:9050/encrypt";
@@ -148,14 +156,16 @@ public class HttpClientUtil {
 //		//83084e7d3b76442ee2339854da5b76d66e5192b0954546d1176018fa910c92b5
 //		String dinfo = HttpClientUtil.doPostJson(durl,"83084e7d3b76442ee2339854da5b76d66e5192b0954546d1176018fa910c92b5");
 //		System.out.println(dinfo+"   ==============");
+
+
 		//======================非对称加密
 //		String url1 =  "http://127.0.0.1:9050/encrypt";
 //		String info1 =  HttpClientUtil.doPostJson(url1,"root");
 //		System.out.println(info1);
 
-		String url =  "http://127.0.0.1:9050/decrypt";
-		String info =  HttpClientUtil.doPostJson(url,"AQBJ4seGMcywWCIhGZ7FtkpZTfCDu2uAlLmFprs69k4qLcgOTZoU7WbTmy22b8yhdnPRz4fM3ublj8NFT+s/W4JcGKm5VWHWj+jNNoeqmiUT+bwpkPb/6xFvuBf/bc4iVo/wxEWjvQfNF9nFIwBglm6buihuwEfrQGtNmQ7u1ZRuBvgmK6FQbYy0JCCrK7PnDqbqSr94uDv/iOBvMM4WXTdrSZJ0oy0z2QkSQfnMaENOG2HK1e8gHsDJFU0HCKFbxrlZpdY8YKY3C5ZdB/+vZlPSM+5jcjosX/p2iB7+ahF57VJ2qUWqpFzHeuUiCpzm9eAf+Ke6d9q/GhTFyyTIJ3LLmT+lG10BudIl42fuyVZPKKrXoZrdIkRsy2BwzA3GWmc=\n");
-		System.out.println(info);
+//		String url =  "http://127.0.0.1:9050/decrypt";
+//		String info =  HttpClientUtil.doPostJson(url,"AQBJ4seGMcywWCIhGZ7FtkpZTfCDu2uAlLmFprs69k4qLcgOTZoU7WbTmy22b8yhdnPRz4fM3ublj8NFT+s/W4JcGKm5VWHWj+jNNoeqmiUT+bwpkPb/6xFvuBf/bc4iVo/wxEWjvQfNF9nFIwBglm6buihuwEfrQGtNmQ7u1ZRuBvgmK6FQbYy0JCCrK7PnDqbqSr94uDv/iOBvMM4WXTdrSZJ0oy0z2QkSQfnMaENOG2HK1e8gHsDJFU0HCKFbxrlZpdY8YKY3C5ZdB/+vZlPSM+5jcjosX/p2iB7+ahF57VJ2qUWqpFzHeuUiCpzm9eAf+Ke6d9q/GhTFyyTIJ3LLmT+lG10BudIl42fuyVZPKKrXoZrdIkRsy2BwzA3GWmc=\n");
+//		System.out.println(info);
 
 	}
 }

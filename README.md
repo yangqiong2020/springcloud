@@ -254,6 +254,7 @@
       spring.cloud.config.name=config-client，如果配置中心客户端不叫config-client就会初始化实例失败并且启动失败
       如果application名字不想叫config-client，那就必须重写spring.cloud.config.name这个配置成config-client，application名就可以随便取
     2.通过httpClient定时使用doPost方式刷新配置http://127.0.0.1:9051/refresh
+        一次只能更新单个服务的配置
       
 23-config-server-encryption-sym
 23-commons
@@ -278,7 +279,27 @@
 23-config-server-encryption-sym-security
     1.开启密码验证，访问配置需要输入用户名和密码，服务要访问配置，要配置允许访问的用户名和密码
 
-    
+24-config-client1-refresh-bus
+24-config-client-refresh-bus
+23-config-server
+23-commons
+    1.连接配置中心的客户端 配置上bus-amqp
+    2.修改配置后，通过httpClient刷新配置：http://127.0.0.1:9051/bus/refresh
+      传递给rabbitmq，然后通知给其他客户端刷新配置，集群服务下所有服务都会更新配置
+
+24-config-client1-refresh-bus
+24-config-client-refresh-bus
+24-config-server-bus
+23-commons
+     1.连接配置中心的客户端和服务端都 配置上bus-amqp
+     2.修改配置后，通过httpClient刷新配置：http://127.0.0.1:9050/bus/refresh
+          传递给rabbitmq，然后通知给其他客户端刷新配置，集群服务下所有服务都会更新配置
+     3.更新局部的配置：
+        更新config-client服务集群
+        http://127.0.0.1:9050/bus/refresh?destination=config-client:**
+        更新单个服务 
+        http://127.0.0.1:9050/bus/refresh?destination=config-client:端口
+              
 25-stream-receiver
 25-stream-sender
     1.开启消息队列
