@@ -185,13 +185,13 @@
     5.疑问，同样是个插入order和trade 为什么在order中create_date可以自动创建，而在trade中create_date不能自动创建
     6.自动更新日期在试验使用的mysql版本中需要加入触发器，触发器要创建增加，修改，删除三种，不能使用 on update的方式
     
-21-zuul-dateway
+21-zuul-gateway
 20-e-book-order-provider
 20-e-book-order-service
   1.访问方式：http://网关服务地址:网关服务端口/访问的服务的名称/访问的服务中的接口的地址
   例如：http://localhost:9020/e-book-order-provider/order/findAll 
   
-21-zuul-dateway-route
+21-zuul-gateway-route
 20-e-book-user-provider
 20-e-book-user-service
     1.配置：zuul.routes.e-book-user-provider.path=/suibian/**
@@ -237,3 +237,108 @@
 22-zuul-gateway-timeout
 20-e-book-order-provider
     1.hystrix和ribbon超时演示
+    
+23-config-client
+23-config-server
+    1.注意在github上要新建项目config
+    2.项目必须是public的不然需要密码验证
+    3.通过服务端访问配置：http://localhost:9050/config-client/dev
+        通过客户端访问对应的服务，会连接上配置
+    4.客户端的配置文件命名必须是bootstrap.properties ，因为这个配置优先于application.properties实例化，
+    只有bootstrap实例化了（从config-server取到配置了），application中的配置才会取的到
+    
+23-config-client-refresh
+23-config-server
+23-commons
+    1.这个服务的名字会把下面服务的名字覆盖掉：spring.application.name=ooxx-config-client
+      spring.cloud.config.name=config-client，如果配置中心客户端不叫config-client就会初始化实例失败并且启动失败
+      如果application名字不想叫config-client，那就必须重写spring.cloud.config.name这个配置成config-client，application名就可以随便取
+    2.通过httpClient定时使用doPost方式刷新配置http://127.0.0.1:9051/refresh
+      
+23-config-server-encryption-sym
+23-commons
+23-config-client
+    1.Dalston.SR1 这个版本支持加密
+    2.如果访问http://127.0.0.1:9050/encrypt/status不是这个状态：{"status":"OK"}
+    3.需要下载加密的jar包，覆盖到对应的目录（看文档）     
+    4.使用httpClient发送doPost请求加密和解密
+         加密（post 请求）：http://127.0.0.1:9050/encrypt 
+         解密（post 请求）：http://127.0.0.1:9050/decrypt 
+    5.加密好的配置上传到github配置如：datasource.password = {cipher} 83084e7d3b76442ee2339854da5b76d66e5192b0954546d1176018fa910c92b5
+
+
+23-config-server-rsa
+23-commons    
+23-config-client-refresh
+    1.使用keytool -genkeypair -alias "config-info" -keyalg "RSA" -keystore "encrypt-info.keystore"  生成私钥
+    2.encrypt-info.keystore放入配置中心服务的resources中
+    3.使用httpClient加密字符
+    4.加密好的配置上传到github中去
+    
+23-config-server-encryption-sym-security
+    1.开启密码验证，访问配置需要输入用户名和密码，服务要访问配置，要配置允许访问的用户名和密码
+
+    
+25-stream-receiver
+25-stream-sender
+    1.开启消息队列
+    2.使用sender中的测试方法来发送消息
+    3.使用receiver来接受消息
+
+25-stream-group-receiver
+25-stream-group-sender
+    1.启动两个消息receiver
+    2.使用sender测试方法发送消息
+
+
+25-stream-partition-receiver
+25-stream-partition-receiver1
+25-stream-partition-sender
+    1.使用sender发送消息
+    2.消息会进入到不同的分区中
+    3.相同消息发送到相同的服务中
+    根据指定的分区规则看数据存入哪个分区中
+    spring.cloud.stream.bindings.outputProduct.producer.partitionKeyExpression=payload
+    
+26-sleuth-product-provider (已改名)
+26-sleuth-product-service
+26-sleuth-consumer     (已改名)
+    1.trace:从客户端发起请求（request）抵达被追踪的边界开始，到北追踪系统向客户端返回响应（response）为止的整个过程
+    2.span:每个trace中会调用若干个服务，为了记录调用了哪些服务，以及每次调用服务的消耗时间等信息，在每次调用服务时，埋入一个调用记录
+    3.x-b3-parentSpanid：标识当前工作单元所属的上一个工作单元
+    4.x-b3-sampled:是否采样，1表示需要被输出,0表示不需要被输出
+    5.x-b3-traceid:一条请求链路trace的唯一标识，必须值
+    6.x-span-name:工作单元的名称，例如：http://user/login
+    7.x-b3-spanid：一个工作单元span的唯一标识，必须值
+    注意：要在logback中把日志级别调成debug；网络波动导致连接数据库超时，可以调节ribbon的连接时间和处理时间
+    
+26-sleuth-elk-product-provider
+26-sleuth-product-service
+26-sleuth-elk-consumer
+    环境:java1.8以上；虚拟机参数设置(文档中掉了两条配置)
+    1.安装nodejs
+    2.安装npm（如果nodejs是免安装版自带npm）
+    3.在head目录下安装grunt-cli和grunt
+    4.启动logstash:./bin/logstash -f config/log_to_es.conf
+        logstash配置中监听的地址必须是ip地址，不能写域名，不然其他服务telnet 9250不通 
+    5.启动es:./elasticsearch -d 
+    6.启动head：grunt server 
+    7.启动kibana：./bin/kibana
+  
+27-sleuth-zipkin-product-provider  
+27-sleuth-zipkin-product-service
+27-sleuth-zipkin-server
+    1.如果properties中的配置高亮说明不识别key，需要排查
+    2.pom文件中的jar如果正确引入，CTRL+点击类会跳转，引入不正确会点击类名没反应
+    3.zipkin的客户端和cloud版本有关联，当前实验环境是Dalston.SR4
+    4.先启动zipkin服务再启动其他服务
+
+28-sleuth-zipkin-mq-consumer
+28-sleuth-zipkin-mq-product-provider
+28-sleuth-zipkin-server-mq
+    1.服务不直接连zipkin，通过rabbitmq消息队列相连
+    
+28-sleuth-zipkin-mq-consumer
+28-sleuth-zipkin-mq-product-provider    
+29-sleuth-zipkin-server-mq-mysql
+    1.把服务追踪日志持久化到mysql数据库中

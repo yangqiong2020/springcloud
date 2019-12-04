@@ -52,8 +52,8 @@
     <file url="file://$PROJECT_DIR$/20-e-book-trade-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/20-e-book-user-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/20-e-book-user-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/20-zuul-dateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/21-zuul-dateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/21-zuul-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/21-zuul-gateway-example" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/21-zuul-gateway-filter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/21-zuul-gateway-route" charset="UTF-8" />
@@ -62,5 +62,35 @@
     <file url="file://$PROJECT_DIR$/22-zuul-gateway-fallback" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/22-zuul-gateway-ratelimt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/22-zuul-gateway-timeout" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/23-commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/23-commons/src/main/java/com/bjsxt/HttpClientUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/23-config-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/23-config-client-refresh" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/23-config-client/23-config-client-refresh" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/23-config-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/23-config-server-encryption-sym" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/23-config-server-encryption-sym-security" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/23-config-server-rsa" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/25-stream-group-receiver" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/25-stream-group-sender" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/25-stream-partition-receiver" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/25-stream-partition-receiver1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/25-stream-partition-sender" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/25-stream-receiver" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/25-stream-sender" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/26-sleuth-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/26-sleuth-elk-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/26-sleuth-elk-product-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/26-sleuth-product-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/26-sleuth-product-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/27-sleuth-elk-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/27-sleuth-zipkin-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/27-sleuth-zipkin-product-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/27-sleuth-zipkin-product-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/27-sleuth-zipkin-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/28-sleuth-zipkin-mq-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/28-sleuth-zipkin-mq-product-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/28-sleuth-zipkin-server-mq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/29-sleuth-zipkin-server-mq-mysql" charset="UTF-8" />
   </component>
 </project>

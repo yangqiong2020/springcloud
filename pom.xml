@@ -59,7 +59,7 @@
         <module>20-e-book-user-service</module>
         <module>20-e-book-order-provider</module>
         <module>20-e-book-order-service</module>
-        <module>21-zuul-dateway</module>
+        <module>21-zuul-gateway</module>
         <module>21-zuul-gateway-route</module>
         <module>21-zuul-gateway-filter</module>
         <module>21-zuul-gateway-example</module>
@@ -68,6 +68,32 @@
         <module>22-zuul-gateway-fallback</module>
         <module>22-zuul-gateway-ratelimt</module>
         <module>22-zuul-gateway-timeout</module>
+        <module>23-config-server</module>
+        <module>23-config-client</module>
+        <module>25-stream-sender</module>
+        <module>25-stream-receiver</module>
+        <module>25-stream-group-receiver</module>
+        <module>25-stream-group-sender</module>
+        <module>25-stream-partition-receiver</module>
+        <module>25-stream-partition-sender</module>
+        <module>25-stream-partition-receiver1</module>
+        <module>26-sleuth-product-service</module>
+        <module>26-sleuth-elk-product-provider</module>
+        <module>26-sleuth-consumer</module>
+        <module>26-sleuth-elk-consumer</module>
+        <module>27-sleuth-zipkin-server</module>
+        <module>27-sleuth-zipkin-consumer</module>
+        <module>27-sleuth-zipkin-product-service</module>
+        <module>27-sleuth-zipkin-product-provider</module>
+        <module>28-sleuth-zipkin-mq-consumer</module>
+        <module>28-sleuth-zipkin-mq-product-provider</module>
+        <module>28-sleuth-zipkin-server-mq</module>
+        <module>29-sleuth-zipkin-server-mq-mysql</module>
+        <module>23-config-client-refresh</module>
+        <module>23-commons</module>
+        <module>23-config-server-encryption-sym</module>
+        <module>23-config-server-rsa</module>
+        <module>23-config-server-encryption-sym-security</module>
     </modules>
 
     <parent>
@@ -80,7 +106,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
     </properties>
 
     <dependencies>

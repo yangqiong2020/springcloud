@@ -20,12 +20,12 @@ public class ProductServiceImpl {
 	 * @return
 	 */
 	public List<Product> findProductAll(){
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		try {
+//			Thread.sleep(2000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		ProductExample example = new ProductExample();
 		List<Product> list = this.productMapper.selectByExampleWithBLOBs(example);
 		return list;

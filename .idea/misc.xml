@@ -9,6 +9,10 @@
         <option value="$PROJECT_DIR$/14-springcloud-hystrix-ribbon-semaphore-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/16-springcloud-dashboard-view-hystrix-ribbon-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/21-zuul-dateway/pom.xml" />
+        <option value="$PROJECT_DIR$/26-sleuth-elk-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/26-sleuth-elk-product-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/21-zuul-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/23-config-client-refresh/pom.xml" />
       </list>
     </option>
   </component>

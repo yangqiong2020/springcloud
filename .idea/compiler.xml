@@ -56,7 +56,7 @@
         <module name="20-e-book-trade-service" />
         <module name="20-e-book-user-provider" />
         <module name="20-e-book-user-service" />
-        <module name="21-zuul-dateway" />
+        <module name="21-zuul-gateway" />
         <module name="21-zuul-gateway-example" />
         <module name="21-zuul-gateway-filter" />
         <module name="21-zuul-gateway-route" />
@@ -65,6 +65,30 @@
         <module name="22-zuul-gateway-fallback" />
         <module name="22-zuul-gateway-ratelimt" />
         <module name="22-zuul-gateway-timeout" />
+        <module name="23-commons" />
+        <module name="23-config-server" />
+        <module name="23-config-server-encryption-sym" />
+        <module name="23-config-server-encryption-sym-security" />
+        <module name="23-config-server-rsa" />
+        <module name="25-stream-group-receiver" />
+        <module name="25-stream-group-sender" />
+        <module name="25-stream-partition-receiver" />
+        <module name="25-stream-partition-receiver1" />
+        <module name="25-stream-partition-sender" />
+        <module name="25-stream-receiver" />
+        <module name="25-stream-sender" />
+        <module name="26-sleuth-consumer" />
+        <module name="26-sleuth-elk-consumer" />
+        <module name="26-sleuth-elk-product-provider" />
+        <module name="26-sleuth-product-service" />
+        <module name="27-sleuth-zipkin-consumer" />
+        <module name="27-sleuth-zipkin-product-provider" />
+        <module name="27-sleuth-zipkin-product-service" />
+        <module name="27-sleuth-zipkin-server" />
+        <module name="28-sleuth-zipkin-mq-consumer" />
+        <module name="28-sleuth-zipkin-mq-product-provider" />
+        <module name="28-sleuth-zipkin-server-mq" />
+        <module name="29-sleuth-zipkin-server-mq-mysql" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
